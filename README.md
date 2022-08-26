@@ -1,6 +1,6 @@
 # Tic Tac Toe -XOX- Game
 
-#### XOX v2 : [Click to PLAY](https://alikartalonline-xox.netlify.app/)
+### XOX v2 : [Click to PLAY](https://alikartalonline-xox.netlify.app/)
 
 <br>
 
@@ -12,6 +12,8 @@
 
 #### XOX v1 : [Click to PLAY](https://alikartalonline-xox2.netlify.app/)
 
-#### First Version:
+> First Version:
 
-![XOX](https://github.com/alikartalonline/Tic-Tac-Toe-XOX-Game/blob/main/public/assets/XOX.gif)
+<img src="https://github.com/alikartalonline/Tic-Tac-Toe-XOX-Game/blob/main/public/assets/XOX.gif" width="350" height="150" alt="Coding" title="Code icon">
+
+#### **PROGRESS:** ![80%](https://progress-bar.dev/80)
