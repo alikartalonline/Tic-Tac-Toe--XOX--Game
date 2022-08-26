@@ -59,7 +59,7 @@ function Homepage() {
                 <div className='row'>
 
                     <Main
-                        reset={reset}  status={status}  game={game}
+                        reset={reset}  status={status}  game={game} setStatus={setStatus}
                         player1Click={player1Click}  player2Click={player2Click}
                         box1={box1}  box2={box2}  box3={box3} 
                         box4={box4}  box5={box5}  box6={box6} 

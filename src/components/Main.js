@@ -5,7 +5,7 @@ function Main(
     {
         reset, status, game, player1Click, player2Click,
         box1, box2, box3, box4, box5, box6, box7, box8, box9,
-        setBox1, setBox2, setBox3, setBox4, setBox5, setBox6, setBox7, setBox8, setBox9,
+        setBox1, setBox2, setBox3, setBox4, setBox5, setBox6, setBox7, setBox8, setBox9, setStatus
     }
 ) {
     return (
@@ -34,8 +34,13 @@ function Main(
                                             'btn border border-dark text-success fs-3')
                                 }
 
+                                // onClick={
+                                //     game === "" ? () => alert("Choose Your PLAYER !") : () => setBox1(game)
+                                // }
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox1(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox1(game) ^ game === "X" ? game && setStatus("Player2") : 
+                                    game && setStatus("Player1")
                                 }
                             >
                                 {box1}
