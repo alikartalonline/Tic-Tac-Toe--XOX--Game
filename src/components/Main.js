@@ -5,7 +5,7 @@ function Main(
     {
         reset, status, game, player1Click, player2Click,
         box1, box2, box3, box4, box5, box6, box7, box8, box9,
-        setBox1, setBox2, setBox3, setBox4, setBox5, setBox6, setBox7, setBox8, setBox9, setStatus
+        setBox1, setBox2, setBox3, setBox4, setBox5, setBox6, setBox7, setBox8, setBox9, setStatus, setGame
     }
 ) {
     return (
@@ -39,8 +39,8 @@ function Main(
                                 // }
                                 onClick={
                                     game === "" ? () => alert("Choose Your PLAYER !") : 
-                                    () => setBox1(game) ^ game === "X" ? game && setStatus("Player2") : 
-                                    game && setStatus("Player1")
+                                    () => setBox1(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box1}
@@ -62,7 +62,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox2(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox2(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box2}
@@ -84,10 +86,10 @@ function Main(
                                     box3 === "X" ? 'btn border border-dark text-primary fs-3' :
                                             'btn border border-dark text-success fs-3')
                                 }
-
-
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox3(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox3(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box3}
@@ -111,7 +113,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox4(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox4(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box4}
@@ -135,9 +139,10 @@ function Main(
                                     box5 === "X" ? 'btn border border-dark text-primary fs-3' :
                                             'btn border border-dark text-success fs-3')
                                 }
-
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox5(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox5(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box5}
@@ -159,7 +164,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox6(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox6(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box6}
@@ -185,7 +192,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox7(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox7(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box7}
@@ -207,7 +216,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox8(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox8(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box8}
@@ -231,7 +242,9 @@ function Main(
                                 }
 
                                 onClick={
-                                    game === "" ? () => alert("Choose Your PLAYER !") : () => setBox9(game)
+                                    game === "" ? () => alert("Choose Your PLAYER !") : 
+                                    () => setBox9(game) ^ game === "X" ? (setStatus("Player2") ^ setGame("O")) : 
+                                    game && (setStatus("Player1") ^ setGame("X"))
                                 }
                             >
                                 {box9}
