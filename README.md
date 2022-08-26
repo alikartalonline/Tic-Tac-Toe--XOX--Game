@@ -12,8 +12,6 @@
 
 #### XOX v1 : [Click to PLAY](https://alikartalonline-xox2.netlify.app/)
 
-<br>
-
-### First Version:
+#### First Version:
 
 ![XOX](https://github.com/alikartalonline/Tic-Tac-Toe-XOX-Game/blob/main/public/assets/XOX.gif)
