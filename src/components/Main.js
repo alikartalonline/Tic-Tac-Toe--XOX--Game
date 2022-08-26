@@ -13,9 +13,9 @@ function Main(
             <div className='container'>
                 <div className='row'>
 
+
                     {/* 3x3 Boxes Start */}
                     <div className='col-10 mt-5 game text-center '>
-
                         <div className='mt-5'>
                             <button
                                 className={
@@ -311,9 +311,18 @@ function Main(
                             </>
                         }
 
+                        <div 
+                        className="player-status mb-3"
+                        >
+                            Player Status: {
+                            game === "X" ? <span className='text-primary'> X</span> : 
+                            game === "O" ?  <span className='text-success'> O</span> : 
+                            <span className='fs-6 text-danger text-opacity-50'> None</span>} 
+                        </div>
+
                         <button
                             className=' btn btn-warning players'
-                            style={{ marginTop: "100%" }}
+                            style={{ marginTop: "40%" }}
                             onClick={reset}>
                             Play Again
                         </button>
