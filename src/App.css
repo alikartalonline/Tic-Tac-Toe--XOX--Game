@@ -52,6 +52,10 @@ button {
   text-overflow: ellipsis;
 }
 
+.box{
+  white-space: nowrap;
+}
+
 footer {
   position: fixed;
   bottom: 0;

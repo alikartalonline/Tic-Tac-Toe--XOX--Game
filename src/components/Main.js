@@ -16,7 +16,7 @@ function Main(
 
                     {/* 3x3 Boxes Start */}
                     <div className='col-10 col-sm-10 col-md-8 col-lg-12 mt-5 game text-center '>
-                        <div className='mt-5'>
+                        <div className='mt-5 col box'>
                             <button
                                 className={
                                     (box1 === "X" ?
@@ -96,7 +96,7 @@ function Main(
                             </button>
                         </div>
 
-                        <div className='mt-5'>
+                        <div className='mt-5 col box'>
                             <button
                                 className={
                                     (box4 === "X" ?
@@ -173,7 +173,7 @@ function Main(
                             </button>
                         </div>
 
-                        <div className='mt-5 mb-5'>
+                        <div className='mt-5 mb-5 col box'>
                             <button
                                 className={
                                     (box7 === "X" ?
