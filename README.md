@@ -1,6 +1,6 @@
 # Tic Tac Toe -XOX- Game
 
-### XOX v2 : [Click to PLAY](https://alikartalonline-xox.netlify.app/)
+### XOX v3 (Responsive) : [Click to PLAY](https://alikartalonline-xox.netlify.app/)
 
 <br>
 
