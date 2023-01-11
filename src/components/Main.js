@@ -15,7 +15,7 @@ function Main(
 
 
                     {/* 3x3 Boxes Start */}
-                    <div className='col-10 mt-5 game text-center '>
+                    <div className='col-10 col-sm-10 col-md-8 col-lg-12 mt-5 game text-center '>
                         <div className='mt-5'>
                             <button
                                 className={
@@ -254,7 +254,7 @@ function Main(
                     {/* 3x3 Boxes Finish */}
 
                     {/* Player Buttons Start  */}
-                    <div className='col-2 mt-5'>
+                    <div className='col-6 ms-auto me-auto col-lg-2 mt-5'>
                         <h2 style={{ whiteSpace: "nowrap", float: "right" }} className="fs-3 mb-3">Choose Your PLAYER!</h2>
                         {
                             status == "" &&
@@ -322,7 +322,7 @@ function Main(
 
                         <button
                             className=' btn btn-warning players'
-                            style={{ marginTop: "40%" }}
+                            style={{ marginTop: "40%", marginBottom:"50%" }}
                             onClick={reset}>
                             Play Again
                         </button>

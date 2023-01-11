@@ -59,7 +59,7 @@ function FinalResult(
         <div>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-12 mt-3 text-center '>
+                    <div className='col-12 md-ms-auto md-me-auto col-lg-10 mt-3 text-center '>
                         {
                             finalResult()
                         }
